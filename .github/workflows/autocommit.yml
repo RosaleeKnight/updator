@@ -7,7 +7,7 @@ on:
       - master
       
   schedule:
-  - cron: "0 7,9,11 * * 1,3" # See https://crontab.guru/#0_7,9,11_*_*_1,3
+  - cron: "1 * * * *" # See https://crontab.guru/#0_7,9,11_*_*_1,3
 
 jobs:
   auto_commit:
@@ -27,20 +27,20 @@ jobs:
           
       - name: Commit changes
         run: |
-          git config --local user.email "mazipanneh@gmail.com"
-          git config --local user.name "mazipan"
+          git config --local user.email "rtknight92@outlook.com"
+          git config --local user.name "RosaleeKnight"
           git add -A
           
-          arr[0]="chore(bot): 😂 auto commit"
-          arr[1]="chore(bot): 😱 auto commit"
-          arr[2]="chore(bot): 👿 auto commit"
-          arr[3]="chore(bot): 💩 auto commit"
-          arr[4]="chore(bot): 🙏 auto commit"
-          arr[5]="chore(bot): 🙈 auto commit"
-          arr[6]="chore(bot): 🐐 auto commit"
-          arr[7]="chore(bot): 🤖 auto commit"
-          arr[8]="chore(bot): 🟩 auto commit"
-          arr[9]="chore(bot): 👻 auto commit"
+          arr[0]="chore(bot): 🛠️ refactoring code"
+          arr[1]="chore(bot): 📝 refactoring code"
+          arr[2]="chore(bot): 💻 refactoring code"
+          arr[3]="chore(bot): 🗑️ refactoring code"
+          arr[4]="chore(bot): 📈 refactoring code"
+          arr[5]="chore(bot): ⏳ refactoring code"
+          arr[6]="chore(bot): 🧹 refactoring code"
+          arr[7]="chore(bot): 🖱️ refactoring code"
+          arr[8]="chore(bot): 🔎 refactoring code"
+          arr[9]="chore(bot): 🖥️ refactoring code"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
